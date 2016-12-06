@@ -2,10 +2,14 @@
 
 namespace Verifier;
 
+use Verifier\Exception\InvalidEmailException;
+
 class EmailRFCVerifier implements VerifierInterface
 {
     public function verify($email)
     {
-        // TODO: Implement verify() method.
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            throw new InvalidEmailException(sprintf('Email address <%s> does not match RFC822 requirements.'));
+        }
     }
 }
