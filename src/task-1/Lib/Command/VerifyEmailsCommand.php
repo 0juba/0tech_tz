@@ -99,11 +99,8 @@ class VerifyEmailsCommand implements CommandInterface
         return 'SELECT e.id, e.email FROM email e WHERE e.id > :email_id  ORDER BY e.id LIMIT :batch_size';
         /* Other way
          * SELECT e.id, e.email
-         * FROM (
-         *      SELECT e.id, e.email FROM email e LIMIT :batch_size, :offset
-         * ) e
-         * JOIN email j ON j.id=e.id
-         * ORDER BY j.id
+         * FROM email e
+         * JOIN (SELECT in_e.id FROM email in_e ORDER BY in_e.id LIMIT :batch_size, :offset) j ON j.id=e.id
          */
     }
 }
