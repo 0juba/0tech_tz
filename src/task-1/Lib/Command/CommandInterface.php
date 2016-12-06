@@ -4,5 +4,5 @@ namespace Lib\Command;
 
 interface CommandInterface
 {
-    public function execute($offset);
+    public function execute($arg);
 }
