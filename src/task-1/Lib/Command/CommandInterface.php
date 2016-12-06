@@ -1,6 +1,6 @@
 <?php
 
-namespace Command;
+namespace Lib\Command;
 
 interface CommandInterface
 {

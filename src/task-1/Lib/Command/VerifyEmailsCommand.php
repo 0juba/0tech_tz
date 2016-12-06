@@ -1,12 +1,12 @@
 <?php
 
-namespace Command;
+namespace Lib\Command;
 
-use Logger\LoggerInterface;
-use Verifier\Exception\DomainNotFoundException;
-use Verifier\VerifierInterface;
-use Verifier\Exception\EmailNotFoundException;
-use Verifier\Exception\InvalidEmailException;
+use Lib\Logger\LoggerInterface;
+use Lib\Verifier\Exception\DomainNotFoundException;
+use Lib\Verifier\VerifierInterface;
+use Lib\Verifier\Exception\EmailNotFoundException;
+use Lib\Verifier\Exception\InvalidEmailException;
 
 class VerifyEmailsCommand implements CommandInterface
 {

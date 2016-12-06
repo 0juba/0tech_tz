@@ -1,6 +1,6 @@
 <?php
 
-namespace Logger;
+namespace Lib\Logger;
 
 interface LoggerInterface
 {

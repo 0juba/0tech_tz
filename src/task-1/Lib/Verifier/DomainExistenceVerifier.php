@@ -1,8 +1,8 @@
 <?php
 
-namespace Verifier;
+namespace Lib\Verifier;
 
-use Verifier\Exception\DomainNotFoundException;
+use Lib\Verifier\Exception\DomainNotFoundException;
 
 class DomainExistenceVerifier implements VerifierInterface
 {

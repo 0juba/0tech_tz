@@ -1,8 +1,8 @@
 <?php
 
-namespace Verifier;
+namespace Lib\Verifier;
 
-use Verifier\Exception\InvalidEmailException;
+use Lib\Verifier\Exception\InvalidEmailException;
 
 class EmailRFCVerifier implements VerifierInterface
 {

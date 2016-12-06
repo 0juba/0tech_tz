@@ -1,6 +1,6 @@
 <?php
 
-namespace Verifier;
+namespace Lib\Verifier;
 
 interface VerifierInterface
 {
