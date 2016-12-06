@@ -11,7 +11,7 @@ class DomainExistenceVerifier implements VerifierInterface
         list(, $domain) = explode('@', $email) + array(null, null);
 
         if ($domain && !filter_var(gethostbyname($domain), FILTER_VALIDATE_IP)) {
-            throw new DomainNotFoundException(sprintf('Cannot resolve domain <%s>.'));
+            throw new DomainNotFoundException(sprintf('Cannot resolve domain <%s> for email <%s>.', $domain, $email));
         }
     }
 }
