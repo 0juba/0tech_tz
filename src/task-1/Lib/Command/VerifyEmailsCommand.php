@@ -68,6 +68,12 @@ class VerifyEmailsCommand implements CommandInterface
                 // NOP or some other logic
             }
         }
+
+        if (!empty($row['id'])) {
+            return $row['id'];
+        }
+
+        return null;
     }
 
     private function getBatchSize()
