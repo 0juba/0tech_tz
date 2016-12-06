@@ -1,0 +1,17 @@
+{
+  "name": "guba_andrei/tz_0tech_1",
+  "description": "Тестовое задание №1",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Guba Andrei",
+      "email": "xg.andrew@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Lib\\": "Lib"
+    }
+  }
+}
