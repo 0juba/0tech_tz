@@ -30,3 +30,8 @@ SELECT MIN(e.id) AS min_id, MAX(e.id) AS max_id FROM email e
 ---
 
 5 ч
+
+Код
+---
+
+[Код тут](https://github.com/xgubax/0tech_tz/tree/master/src/task-1)
