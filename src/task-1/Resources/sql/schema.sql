@@ -31,7 +31,3 @@ CREATE TABLE IF NOT EXISTS domain(
 
 -- Чего я НЕ сообразил - как это можно использовать? Если только для более удобного сбора каких-то данных, например, сколько у нас
 -- адресов принадлежат такому-то домену ...
--- Например:
-SELECT COUNT(d.domain), d.domain FROM domain d
-INNER JOIN email e ON e.domain_id = d.id
-GROUP BY d.domain
